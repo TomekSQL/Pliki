@@ -1,0 +1,3 @@
+select u.Nazwa, e.CzasRealizacjiSekundy, e.CzasModelowySekundy from pro.ProEtap e 
+            inner join pro.ProEtapUrzadzenie eu on eu.IdProEtap = e.IdProEtap
+            inner join pro.ProUrzadzenie u on u.IdProUrzadzenie = eu.IdProUrzadzenie
